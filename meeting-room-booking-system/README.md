@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Meeting Room Booking System
+
+Comments:
+If I were to have two days to build this application I would firstly style this so it were much more visually appealing. I would also add a selection for multiple booking rooms as well as a full weeks schedule. I would also try and split out the buttons into reusable atoms, utilize a config file and implement a consts file so that strings arent hard coded.
+I would also create and integrate a restful API using either .net 5 or .net core to handle the booking actions. I would store the data in a relational database so that the booking data could be queried and saved to avoid storing the data within the web application.
+
+I tried my best to get the unit tests written, however React unit testing is not my strongest skill. I used React due to the fact that it is designed for this type of application and the ease of getting the app up and running. Normally I would create a solution in .Net MVC, but I didnt think that it would have been the best choice.
+
+Application Overview:
+This application allows you to select a single booking slot, or a range of adjacent booking slots. Once the slots are selected, you can confirm your booking and then this booking goes into a list of your booked time slots.
+These booked time slots can then be returned if required so that those slots are available for booking again.
+
+Running the application:
+The default details are as below, but this is the summarized version.
+Checkout the git repo.
+Navigate to the repo's base folder
+run 'npm install' to install dependencies
+run 'npm start' to run the application
+run 'npm test' to run unit tests
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
