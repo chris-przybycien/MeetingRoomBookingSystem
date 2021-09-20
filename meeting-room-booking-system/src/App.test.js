@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import TimeSlots from './components/molecules/TimeSlots'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('Component matches snapshot', () => {
+    const component = renderer.create(
+        <TimeSlots />,
+    );
+    let output = component.toJSON();
+    expect(output).toMatchSnapshot();
+  });
